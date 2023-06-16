@@ -10,6 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-item);
+    background-color: var(--page-color);
 }
 
 a {
@@ -29,7 +30,7 @@ button {
 
 
 .header-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -37,12 +38,18 @@ button {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--hero-background);
+    color: var(--logo-color);
 
 }
 
-.logo-part {
-    color: var(--logo-color);
+.header-logo-part {
+    color: var(--hero-background);
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
 }
 
 .header-list-item {
@@ -57,6 +64,9 @@ button {
 .header-list-item:hover,
 .header-list-item:focus {
     color: var(--button-color);
+}
+.header-address {
+    font-style: normal;
 }
 
 .header-contacts-item {
@@ -95,7 +105,8 @@ button {
     background-color: var(--logo-color);
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: var(--button-color);
 }
 
@@ -103,7 +114,7 @@ button {
     background-color: var(--hero-background);
 }
 
-.features-list-item {
+.features-item-title {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -118,7 +129,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var(--text-item);
 
 }
 
@@ -142,6 +153,9 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--hero-background);
+}
+.team-worker {
+    background-color: var(--page-color);
 }
 
 .team-worker-title {
@@ -175,8 +189,11 @@ button {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--text-lightcolor);
+    color: var(--logo-color);
 
+}
+.footer-logo-part {
+    color: var(--text-lightcolor)
 }
 
 .footer-text {
@@ -200,14 +217,14 @@ button {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: var(--page-color);
-    background: var(--button-color);
+    color: var(--logo-color);
+    background: var(--text-lightcolor);
 }
 
 .filters-btn:hover,
 .filters-btn:focus {
-    background: var(--text-lightcolor);
-    color: var(--logo-color);
+    background: var(--button-color);
+    color: var(--page-color);
 }
 
 .portfolio-list-title {
@@ -225,5 +242,5 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var( --text-item);
 }
